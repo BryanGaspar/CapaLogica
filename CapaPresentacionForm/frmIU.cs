@@ -24,7 +24,7 @@ namespace CapaPresentacionForm
             string nombre = this.txtNom.Text;
             this.txtMensaje.Text = conta.Saludos();
             double x = double.Parse(this.txtSaldoIni.Text);
-            this.txtRes.Text = conta.getSaldos(x).ToString();
+            this.txtRes.Text = conta.getSaldos(x).ToString(nombre);
             int numMes = Int32.Parse(this.txtMes.Text);
             this.txtNombreMes.Text = CapaLogica.Utilidades.getNombreDelMes(numMes);
         }
