@@ -30,9 +30,9 @@ namespace CapaPresentacionConsola
             Console.Write("Ingrese el numero del mes: ");
             numeroMes = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine(conta.getSaldos(x));
+            Console.WriteLine(conta.Saludos(nombre));
+            Console.WriteLine("Sueldo: {0}", conta.getSaldos(x));
             Console.WriteLine("el estado de su Fecha es : {0}", CapaLogica.Utilidades.validarFecha(fecha));
-            Console.WriteLine("Nombre ingresado: {0}", conta.Saludos(nombre));
             Console.WriteLine("Mes ingresado: {0}", CapaLogica.Utilidades.getNombreDelMes(numeroMes));
             Console.ReadKey();
 
