@@ -54,5 +54,19 @@ namespace CapaLogica
             }//fin Switch
             return aux;
         }
+       public static Boolean validarFecha(String fecha)
+        {
+            try
+            {
+                DateTime.Parse(fecha);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+
+
+        }
     }
 }

@@ -43,6 +43,10 @@ namespace CapaPresentacionForm
             this.txtMes = new System.Windows.Forms.TextBox();
             this.txtNombreMes = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.txtFecha = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtValidarFecha = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -100,7 +104,7 @@ namespace CapaPresentacionForm
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(57, 241);
+            this.label4.Location = new System.Drawing.Point(57, 274);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(70, 13);
             this.label4.TabIndex = 6;
@@ -109,7 +113,7 @@ namespace CapaPresentacionForm
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(57, 288);
+            this.label5.Location = new System.Drawing.Point(57, 319);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(54, 13);
             this.label5.TabIndex = 7;
@@ -117,7 +121,7 @@ namespace CapaPresentacionForm
             // 
             // txtMensaje
             // 
-            this.txtMensaje.Location = new System.Drawing.Point(139, 288);
+            this.txtMensaje.Location = new System.Drawing.Point(139, 316);
             this.txtMensaje.Name = "txtMensaje";
             this.txtMensaje.ReadOnly = true;
             this.txtMensaje.Size = new System.Drawing.Size(331, 20);
@@ -125,7 +129,7 @@ namespace CapaPresentacionForm
             // 
             // txtRes
             // 
-            this.txtRes.Location = new System.Drawing.Point(139, 234);
+            this.txtRes.Location = new System.Drawing.Point(139, 274);
             this.txtRes.Name = "txtRes";
             this.txtRes.ReadOnly = true;
             this.txtRes.Size = new System.Drawing.Size(331, 20);
@@ -150,7 +154,7 @@ namespace CapaPresentacionForm
             // 
             // txtNombreMes
             // 
-            this.txtNombreMes.Location = new System.Drawing.Point(139, 323);
+            this.txtNombreMes.Location = new System.Drawing.Point(139, 368);
             this.txtNombreMes.Name = "txtNombreMes";
             this.txtNombreMes.ReadOnly = true;
             this.txtNombreMes.Size = new System.Drawing.Size(331, 20);
@@ -159,17 +163,55 @@ namespace CapaPresentacionForm
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(57, 323);
+            this.label7.Location = new System.Drawing.Point(67, 368);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(30, 13);
             this.label7.TabIndex = 12;
             this.label7.Text = "Mes";
+            // 
+            // txtFecha
+            // 
+            this.txtFecha.Location = new System.Drawing.Point(224, 216);
+            this.txtFecha.Name = "txtFecha";
+            this.txtFecha.Size = new System.Drawing.Size(172, 20);
+            this.txtFecha.TabIndex = 15;
+            this.txtFecha.TextChanged += new System.EventHandler(this.txtFecha_TextChanged);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(57, 219);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(103, 13);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Ingrese la fecha:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(24, 411);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(103, 13);
+            this.label9.TabIndex = 16;
+            this.label9.Text = "Estado de Fecha";
+            // 
+            // txtValidarFecha
+            // 
+            this.txtValidarFecha.Location = new System.Drawing.Point(139, 404);
+            this.txtValidarFecha.Name = "txtValidarFecha";
+            this.txtValidarFecha.ReadOnly = true;
+            this.txtValidarFecha.Size = new System.Drawing.Size(331, 20);
+            this.txtValidarFecha.TabIndex = 17;
             // 
             // frmIU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(933, 450);
+            this.Controls.Add(this.txtValidarFecha);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.txtFecha);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.txtNombreMes);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtMes);
@@ -208,5 +250,9 @@ namespace CapaPresentacionForm
         private System.Windows.Forms.TextBox txtMes;
         private System.Windows.Forms.TextBox txtNombreMes;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtFecha;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtValidarFecha;
     }
 }
